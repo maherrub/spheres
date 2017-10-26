@@ -7,6 +7,13 @@
     <meta name="description" content="" />
     <link href="{% static "/static/helloworld/css/styles.css" %}" rel="stylesheet">
     <link href="{% static "/static/helloworld/css/gradients.css" %}" rel="stylesheet">
+	<!--dash-media-css-->
+	<style>
+        video {
+            width: 320px;
+            height: 180px;
+        }
+    </style>
 </head>
 
 <body class="">
@@ -67,7 +74,18 @@
     <footer>
         <p class="footer-contents">Designed and developed with <a href="https://aws.amazon.com/careers/devtools-jobs/">♥</a> in Seattle.</p>
     </footer>
-
+	
+	<div>
+		<video autoplay controls>
+			<source src="{% static "/static/helloworld/video/T4_Small_dash.mpd" %}"/>
+        </video>
+            <br/>dash player<p/>
+    </div>
+	
+	
+	
+	
+	<script src="{% static "/static/helloworld/js/dash.all.debug.js" %}"></script> 
     <script src="{% static "/static/helloworld/js/set-background.js" %}"></script>
 </body>
 
